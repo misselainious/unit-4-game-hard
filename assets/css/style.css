@@ -1,0 +1,21 @@
+.player{
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    position: relative;
+}
+button{
+    position: absolute;
+}
+/* #carButton{
+    top: 640px;
+} */
+#junButton{
+    top: 160px;
+}
+#silButton{
+    top: 320px;
+}
+#tonyButton{
+    top: 480px;
+}
