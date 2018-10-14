@@ -101,6 +101,7 @@ $(document).ready(function () {
             enemyCharacter = tony;
             console.log("Enemy Character:", enemyCharacter);
             isEnemyPlayerSelected = true;
+            $("#directions2").text("");
             $("#tonyButton").appendTo($("#enemyFightArea"))
         }
 
