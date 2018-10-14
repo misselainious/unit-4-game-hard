@@ -1,24 +1,69 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Star Wars</title>
+    <title>Mob Wars</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="../unit-4-game-hard/assets/css/reset.css">
     <link rel="stylesheet" type="text/css" media="screen" href="../unit-4-game-hard/assets/css/style.css" />
     <script src="../unit-4-game-hard/assets/javascript/game.js"></script>
 </head>
+
 <body>
-    <button id="carButton" class="character"><img class="player" value="Carmela" src="../unit-4-game-hard/assets/images/Carmela.jpg" alt=""></button>
-    <button id="junButton" class="character"><img class="player" value="Junior" src="../unit-4-game-hard/assets/images/Junior.jpg" alt=""></button>
-    <button id="silButton" class="character"><img class="player" value="Silvio" src="../unit-4-game-hard/assets/images/Silvio.jpg" alt=""></button>
-    <button id="tonyButton" class="character"><img class="player" value="Tony" src="../unit-4-game-hard/assets/images/Tony.jpg" alt=""></button>
+    <div id="characterContainer">
+        <h1 id="title">Go ahead...make your move</h1>
+        <div id="carButton" class="character">
+            <button><img class="player" value="Carmela" src="../unit-4-game-hard/assets/images/Carmela.jpg" alt=""></button>
+            <h2>Carmela</h2>
+            <!-- <h2 class="enemyHP">HP:100</h2>
+            <h2 class="currentHP"></h2> -->
+        </div>
 
+        <div id="junButton" class="character">
+            <button><img class="player" value="Junior" src="../unit-4-game-hard/assets/images/Junior.jpg" alt=""></button>
+            <h2>Junior</h2>
+            <!-- <h2 class="enemyHP">HP:120</h2>
+            <h2 class="currentHP"></h2> -->
+        </div>
 
-    <!-- Attack/Restart Buttons -->
+        <div id="silButton" class="character">
+            <button><img class="player" value="Silvio" src="../unit-4-game-hard/assets/images/Silvio.jpg" alt=""></button>
+            <h2>Silvio</h2>
+            <!-- <h2 class="currentHP enemyHP">HP:100</h2> -->
+        </div>
+
+        <div id="tonyButton" class="character">
+            <button><img class="player" value="Tony" src="../unit-4-game-hard/assets/images/Tony.jpg" alt=""></button>
+            <h2>Tony</h2>
+            <!-- <h2 class="currentHP enemyHP">HP:150</h2> -->
+        </div>
+    </div>
+
+    <div id="userFightArea">My Alias
+        <h3 id= "directions"> Click on a character to choose your alias.</h3>
+    </div>
+
+    <div id="enemyFightArea">My Rival
+        <h3 id= "directions2"></h3>
+    </div>
+
+    <div id="statArea">
+        <h2>Current HP: </h2>
+        <h2 class = "currentHP"></h2>
+        <h2>Enemy HP: </h2>
+        <h2 class ="enemyHP"></h2>
+
+          <!-- Attack/Restart Buttons -->
     <button id="popEm">Pop 'Em!</button>
     <button id="restart">Restart</button>
+  
+    </div>
+
+
+  
 </body>
+
 </html>
